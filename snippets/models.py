@@ -35,7 +35,3 @@ class Snippet(models.Model):
     							full=True, **options)
 		self.highlighted = highlight(self.code, lexer, formatter)
 		super(Snippet, self).save(*args, **kwargs)
-
-class Game(models.Model):
-	name = models.TextField()
-	snippets = models.ManyToManyField(Snippet)
