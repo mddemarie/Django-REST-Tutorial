@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 
-#setting the default format in json format
+# setting the default format in json format
 REST_FRAMEWORK = {
     'PAGE_SIZE': 10
 }
